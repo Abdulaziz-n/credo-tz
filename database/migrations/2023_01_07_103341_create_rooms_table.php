@@ -16,6 +16,11 @@ return new class extends Migration
         Schema::create('rooms', function (Blueprint $table) {
             $table->id();
 
+            $table->integer('room_number');
+            $table->date('start_reserve_date');
+            $table->date('end_reserve_date')->nullable();
+            $table->integer('user_id');
+
             $table->timestamps();
         });
     }
