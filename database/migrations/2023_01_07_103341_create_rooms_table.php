@@ -17,8 +17,8 @@ return new class extends Migration
             $table->id();
 
             $table->integer('room_number');
-            $table->date('start_reserve_date');
-            $table->date('end_reserve_date')->nullable();
+            $table->timestamp('start_reserve_date');
+            $table->timestamp('end_reserve_date')->nullable();
             $table->integer('user_id');
 
             $table->timestamps();
