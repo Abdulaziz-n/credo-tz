@@ -17,5 +17,6 @@ class SetPointsService
         }
 
         return $user;
+
     }
 }

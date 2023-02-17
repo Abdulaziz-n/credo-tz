@@ -42,3 +42,4 @@ Route::group([
     Route::get('get/prize', [\App\Http\Controllers\PrizeController::class, 'getRandomPrize']);
     Route::get('set/prize', [\App\Http\Controllers\PrizeController::class, 'setPrize']);
 });
+

@@ -46,4 +46,5 @@ class PrizeController extends Controller
 
         return response()->json('set prize successfully')->setStatusCode(200);
     }
+
 }
