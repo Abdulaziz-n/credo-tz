@@ -30,4 +30,5 @@ class PrizeTypeSeeder extends Seeder
            'slug' => 'object',
         ]);
     }
+
 }

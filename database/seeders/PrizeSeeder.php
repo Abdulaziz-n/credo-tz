@@ -51,4 +51,5 @@ class PrizeSeeder extends Seeder
         ]);
 
     }
+
 }

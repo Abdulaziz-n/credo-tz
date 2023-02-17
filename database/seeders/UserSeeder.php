@@ -22,4 +22,5 @@ class UserSeeder extends Seeder
             'bank_account' => 8600530411111111
         ]);
     }
+
 }

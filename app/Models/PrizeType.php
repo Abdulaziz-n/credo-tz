@@ -13,5 +13,4 @@ class PrizeType extends Model
 
     protected $casts = ['name' => 'string'];
 
-
 }

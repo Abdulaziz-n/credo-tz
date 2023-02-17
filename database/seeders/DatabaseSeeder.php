@@ -25,6 +25,7 @@ class DatabaseSeeder extends Seeder
            UserSeeder::class,
             PrizeTypeSeeder::class,
             PrizeSeeder::class
+
         ]);
     }
 }

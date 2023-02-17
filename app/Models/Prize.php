@@ -21,5 +21,4 @@ class Prize extends Model
     {
         return $this->belongsTo(PrizeType::class, 'prize_types_id','id');
     }
-
 }
