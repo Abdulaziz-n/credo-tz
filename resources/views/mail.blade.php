@@ -8,9 +8,9 @@
     <title>Mail</title>
 </head>
 <body>
-    <p>"Room number" {{$room[0]['room_number']}}</p>
-        <p>"User" {{$room[0]['user_id']}}</p>
-    <p>"Start reserve date" {{$room[0]['start_reserve_date']}}</p>
-    <p>"End reserve date" {{$room[0]['end_reserve_date']}}</p>
+        <h1>
+            Prize from Credo Digital ))
+        </h1>
+            <p>"Prize" {{$prize['type']['name']}}</p>
 </body>
 </html>

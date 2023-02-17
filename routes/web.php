@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\SetOrderController;
+use App\Http\Controllers\PrizeController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,4 +18,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('room', [SetOrderController::class, 'setOrder']);
+Route::get('prize', [PrizeController::class, 'setPrize']);
