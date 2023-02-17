@@ -31,6 +31,7 @@ Route::group([
     Route::post('me', [AuthController::class, 'me']);
 
 });
+
 Route::post('auth/login', [AuthController::class, 'login'])->name('login');
 
 
