@@ -2,7 +2,9 @@
 
 namespace App\Http\Services;
 
+use App\Models\Prize;
 use Illuminate\Support\Facades\Http;
+use App\Models\ActivityLog;
 use Illuminate\Support\Facades\Log;
 
 class SendMoneyService
@@ -17,5 +19,14 @@ class SendMoneyService
 
         return $send;
 
+    }
+
+    public function sendPrize()
+    {
+        $prize = ActivityLog::query()
+            ->where('prize.slug', 'money')
+            ->where('send', false)->get();
+
+        return $this->sendMoney($prize['user']['account'], $prize['prize']['value']);
     }
 }

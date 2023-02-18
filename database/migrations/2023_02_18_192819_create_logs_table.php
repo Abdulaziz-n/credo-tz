@@ -13,18 +13,15 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('prizes', function (Blueprint $table) {
+        Schema::create('logs', function (Blueprint $table) {
             $table->id();
 
-            $table->bigInteger('prize_types_id')->nullable();
-            $table->bigInteger('value')->nullable();
-            $table->bigInteger('count')->nullable();
-            $table->boolean('unlimited')->nullable()->default(false);
+            $table->bigInteger('prize_id')->nullable();
             $table->boolean('send')->nullable()->default(false);
+            $table->bigInteger('user_id')->nullable();
 
             $table->timestamps();
         });
-
     }
 
     /**
@@ -34,6 +31,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('prizes');
+        Schema::dropIfExists('logs');
     }
 };
